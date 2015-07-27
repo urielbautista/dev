@@ -14,7 +14,7 @@ public class LlaveProxy extends Llave {
     // correcto, invocará el método del objeto real.
     
 	@Override
-	public void RealizarContacto(CentralitaVehiculo centralita) {
+	public void realizarContacto(CentralitaVehiculo centralita) {
         // Realizamos una comprobación adicional de seguridad. En caso de no cumplirse, se
         // aborta la operación. Esta operación podría ser la ejecución de un algoritmo para
         // comprobar la autenticidad del código de la llave, una comprobación de nombre de
@@ -24,7 +24,7 @@ public class LlaveProxy extends Llave {
             return;
         }
  
-        if (LlaveCorrecta(centralita.getCodigoLlave())){
+        if (llaveCorrecta(centralita.getCodigoLlave())){
         	 System.out.println("Contacto realizado");
         }else{
         	System.out.println("Código de llave inválido");
@@ -33,8 +33,8 @@ public class LlaveProxy extends Llave {
 	}
 
 	@Override
-	public boolean LlaveCorrecta(int codigoLlave) {
-		 return llaveOriginal.LlaveCorrecta(codigoLlave);
+	public boolean llaveCorrecta(int codigoLlave) {
+		 return llaveOriginal.llaveCorrecta(codigoLlave);
 	}
 
 }

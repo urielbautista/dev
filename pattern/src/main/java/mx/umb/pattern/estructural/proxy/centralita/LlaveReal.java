@@ -10,8 +10,8 @@ public class LlaveReal extends Llave {
     // Realizar contacto: comprueba que el código de la llave sea correcto.
     // En caso de que lo sea, arranca el vehículo.
 	@Override
-	public void RealizarContacto(CentralitaVehiculo centralita) {
-		if (LlaveCorrecta(centralita.getCodigoLlave())){
+	public void realizarContacto(CentralitaVehiculo centralita) {
+		if (llaveCorrecta(centralita.getCodigoLlave())){
 	           System.out.println("Contacto realizado");
 		}else{
 			System.out.println("Código de llave inválido");
@@ -20,7 +20,7 @@ public class LlaveReal extends Llave {
 	}
 
 	@Override
-	public boolean LlaveCorrecta(int codigoLlave) {
+	public boolean llaveCorrecta(int codigoLlave) {
 		 return codigoLlave == this.codigoLlave;
 	}
 

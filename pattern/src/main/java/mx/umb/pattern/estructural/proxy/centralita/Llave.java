@@ -9,7 +9,7 @@ public abstract class  Llave {
     }
  
     // Métodos abstractos que implementarán el elemento real y el proxy
-    public abstract void RealizarContacto(CentralitaVehiculo centralita);
-    public abstract boolean LlaveCorrecta(int codigoLlave);
+    public abstract void realizarContacto(CentralitaVehiculo centralita);
+    public abstract boolean llaveCorrecta(int codigoLlave);
     
 }

@@ -10,10 +10,10 @@ public class CentralitaMain {
 		CentralitaVehiculo centralita = new CentralitaVehiculo(codigoLlave, codigoSeguridad);
 		 
 		Llave llaveSimple = new LlaveReal(codigoLlave);
-		llaveSimple.RealizarContacto(centralita);
+		llaveSimple.realizarContacto(centralita);
 		 
 		Llave proxy = new LlaveProxy(llaveSimple);
-		proxy.RealizarContacto(centralita);
+		proxy.realizarContacto(centralita);
 
 
 	}
