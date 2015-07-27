@@ -7,6 +7,6 @@ public class ProxyMain {
 		 https://danielggarcia.wordpress.com/2014/04/07/patrones-estructurales-vii-patron-proxy/
 		 */
 		Elemento elemento= new ElementoProxy(new ElementoReal());
-		System.out.println(elemento.HttpGet("google.com"));
+		System.out.println(elemento.httpGet("google.com"));
 	}
 }

@@ -13,12 +13,12 @@ public class ElementoProxy implements Elemento {
 	/** El método HttpGet realizará comprobaciones y/o adaptaciones para
     posteriormente realizar la llamada al método homónimo del objeto real.**/
 	@Override
-	public String HttpGet(String uri) {
+	public String httpGet(String uri) {
 
 		if (uri.toLowerCase().contains("paginaprohibida.com")){
 			return null;
 		}else{
-            return elemento.HttpGet(uri);
+            return elemento.httpGet(uri);
 		}
 	}
 
