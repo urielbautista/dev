@@ -2,6 +2,10 @@ package mx.umb.pattern.creacional.singleton;
 
 import java.util.Date;
 
+/**Este código, sin embargo, tiene un problema: no es seguro en entornos multi-hilo.
+ * Si dos hilos de ejecución entran en la propiedad Instance al mismo tiempo,
+ * es posible que se creen dos instancias de nuestra clase Singleton.
+ **/
 public class Singleton {
 	// Declaramos un atributo del mismo tipo de la clase con carácter estático
 	private static Singleton instance = null;
