@@ -1,4 +1,4 @@
-package mx.umb.pattern.creacional.singleton.demand;
+﻿package mx.umb.pattern.creacional.singleton.demand;
 
 
 /**
@@ -14,12 +14,12 @@ public class LoggerDemandHolder {
 	private LoggerDemandHolder(){	
 	}
 
-    private static class LoggerHolder{
+    private static class LazyHolder {
          public static LoggerDemandHolder logger = new LoggerDemandHolder();
     }
 
     public static LoggerDemandHolder getInstance(){
-         return LoggerHolder.logger;
+         return LazyHolder.logger;
     }
     
 }
