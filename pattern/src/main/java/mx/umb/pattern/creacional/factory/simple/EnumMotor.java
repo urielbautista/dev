@@ -1,4 +1,4 @@
-package mx.umb.pattern.creacional.factorysimple;
+package mx.umb.pattern.creacional.factory.simple;
 
 public enum EnumMotor {
 	MOTOR_TYPES("allowedMotorTypes"),

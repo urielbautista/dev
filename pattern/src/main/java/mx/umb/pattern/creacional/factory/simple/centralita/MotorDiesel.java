@@ -1,4 +1,4 @@
-package mx.umb.pattern.creacional.simplefactory.centralita;
+package mx.umb.pattern.creacional.factory.simple.centralita;
 
 public class MotorDiesel implements IMotor {
 

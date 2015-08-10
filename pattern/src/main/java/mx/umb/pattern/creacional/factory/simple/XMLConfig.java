@@ -1,4 +1,4 @@
-package mx.umb.pattern.creacional.factorysimple;
+package mx.umb.pattern.creacional.factory.simple;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,7 +34,7 @@ public class XMLConfig {
 		   System.out.println("Current relative path is: " + s);
 		        
 		        
-			File fXmlFile = new File(current+"/src/main/java/mx/umb/pattern/creacional/simplefactory/simple-factory.xml");
+			File fXmlFile = new File(current+"/src/main/java/mx/umb/pattern/creacional/factory/simple/simple-factory.xml");
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 			Document doc = dBuilder.parse(fXmlFile);
