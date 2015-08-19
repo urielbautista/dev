@@ -1,0 +1,57 @@
+ChainOfResponsibility:
+	Permite establecer una cadena de objetos receptores a través de los cuales se pasa una petición formulada por un objeto emisor. 
+	La idea es que cualquiera de los receptores pueden responder a la petición en función de un criterio establecido. 
+	Encadena los objetos receptores y pasa la petición a través de la cadena hasta que es procesada por algún objeto. 
+Command:
+	“Encapsular una petición como un objeto, de modo que puedan parametrizarse otros objetos con distintas peticiones 
+	o colas de peticiones y proporcionar soporte para realizar operaciones que puedan deshacerse”.
+	::: Grabación de macros (secuencia de operaciones)
+	Asistentes de instalación (cada pantalla implementaría un Command que realizaría una operación Execute() al pulsar el botón “Siguiente”)
+	Elementos Action del framework Swing de Java.
+Interpreter:
+	Este patrón busca representar un lenguaje mediante reglas gramáticas. 
+	Para ello define estas reglas gramáticas y como interpretarlas. Utiliza una clase para representar una regla gramática.
+Iterator:
+	“Proporcionar una forma de acceder a los elementos de un objeto agregado de forma secuencial 
+	sin exponer sus detalles”.
+	::: Lista de Tarjetas encriptdas y tokenizadas
+Mediator:
+	Un Mediator es un patrón de diseño que define un objeto que hace de procesador central,
+	coordinando las relaciones entre sus asociados o participantes. Permite la interacción de varios objetos, 
+	sin generar acoples fuertes en esas relaciones. Todos los objetos se comunican con un mediador y 
+	es éste quién realiza la comunicación con el resto.
+Memento:
+	Su finalidad es almacenar el estado de un objeto (o del sistema completo) en un momento dado, 
+	de manera que se pueda restaurar posteriormente si fuese necesario. 
+	Para ello se mantiene almacenado el estado del objeto para un instante de tiempo en una clase independiente de aquella 
+	a la que pertenece el objeto (pero sin romper la encapsulación), de forma que ese recuerdo permita que el objeto
+	sea modificado y pueda volver a su estado anterior.
+Observer:
+	“Definir una dependencia uno-a-muchos entre objetos de forma de que, cuando el estado de uno de ellos cambia, 
+	todos los objetos dependientes son notificados y actualizados de forma automática”.
+	::: Este patrón es la base de los eventos de la mayor parte de las interfaces de usuario: 
+	los Event Handlers se corresponderían con los Observers que esperan la notificación de un cambio de estado.
+State:
+	“Permitir que un objeto modifique su comportamiento cuando su estado interno cambie. Parecerá que el objeto cambia de clase”.
+	::: un Workflow de un gestor de defectos en el que un elemento de trabajo pueda encontrarse en distintos estados (nuevo, en curso, corregido…) 
+	y en el que cada uno de los estados implica un conjunto de posibles operaciones y transiciones que difieren entre sí.
+Strategy:
+	“Definir una familia de algoritmos, encapsular cada uno de ellos y hacerlos intercambiables.
+	Strategy permite cambiar el algoritmo independientemente de los clientes que lo utilicen”.
+	::Del mismo modo podemos pensar en una conexión a un servicio web: podremos realizarla mediante TCP/IP, HTTP, HTTPS,
+	Named Pipes… todo esto deberá ser transparente para el cliente: El contexto será el encargado de adoptar una forma concreta de conexión.
+	Los compresores funcionan a través de estrategias (se utiliza un algoritmo distinto para comprimir en zip o en rar), y en general, 
+	cualquier programa capaz de almacenar y transmitir datos en distintos formatos implementarán este patrón. 
+	::: Por lo tanto, como podemos imaginar, nos encontramos, tanto por su utilidad como por su sencillez, 
+	con uno de los patrones más utilizados de todos los expuestos por el GoF.
+TemplateMethod:
+	“Permitir que ciertos pasos de un algoritmo definidos en un método de una clase sean redefinidos en sus clases derivadas
+	sin necesidad de sobrecargar la operación entera”.
+	::: Los Servlets de Java. En ellos se produce una invocación secuencial de los métodos init() (al instanciar el Servlet) 
+	y service() (al realizar una petición) que, a partir del tipo de petición, ejecutarán el método correspondiente a su tipo, 
+	como doGet(), doPost()… Estos métodos son los que el programador deberá implementar para darles una funcionalidad concreta.
+Visitor:
+	Busca separar un algoritmo de la estructura de un objeto.
+	 La operación se implementa de forma que no se modifique el código de las clases sobre las que opera.
+
+
