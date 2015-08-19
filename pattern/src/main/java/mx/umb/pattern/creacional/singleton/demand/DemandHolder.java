@@ -1,4 +1,4 @@
-﻿package mx.umb.pattern.creacional.singleton.demand;
+package mx.umb.pattern.creacional.singleton.demand;
 
 
 /**
@@ -9,17 +9,17 @@
  *  asegure de que realmente lo es, es decir, siempre devuelva la misma instancia del objeto no importa 
  *  si su aplicación es o no multihilo la implementación del patrón siempre debe funcionar en ambos ambientes.
  */	
-public class LoggerDemandHolder {
+public class DemandHolder {
 
-	private LoggerDemandHolder(){	
+	private DemandHolder(){
 	}
-
-    private static class LazyHolder {
-         public static LoggerDemandHolder logger = new LoggerDemandHolder();
+	
+	 private static class LazyHolder {
+         public static DemandHolder instance = new DemandHolder();
     }
-
-    public static LoggerDemandHolder getInstance(){
-         return LazyHolder.logger;
-    }
-    
+	 
+	 public static DemandHolder getInstance(){
+		 return LazyHolder.instance;
+	 }
 }
+
