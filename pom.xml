@@ -31,6 +31,7 @@
 		<module>pattern</module>
 		
 		<module>miscellaneous</module>
+		<module>utility</module>
 	</modules>
 	
 </project>

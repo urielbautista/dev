@@ -7,6 +7,27 @@ import java.util.List;
 
 public class SplitArrayList {
 
+	public static <T>List<List<T>> chopIntoParts( final List<T> ls, final int iParts ){
+	    final List<List<T>> lsParts = new ArrayList<List<T>>();
+	    final int iChunkSize = ls.size() / iParts;
+	    int iLeftOver = ls.size() % iParts;
+	    int iTake = iChunkSize;
+
+	    for( int i = 0, iT = ls.size(); i < iT; i += iTake ){
+	        if( iLeftOver > 0 ){
+	            iLeftOver--;
+
+	            iTake = iChunkSize + 1;
+	        }else {
+	            iTake = iChunkSize;
+	        }
+
+	        lsParts.add( new ArrayList<T>( ls.subList( i, Math.min( iT, i + iTake ) ) ) );
+	    }
+
+	    return lsParts;
+	}
+	
 	//chops a list into non-view sublists of length L
 	static <T> List<List<T>> chopped(List<T> list, final int L) {
 		List<List<T>> parts = new ArrayList<List<T>>();
@@ -30,12 +51,16 @@ public class SplitArrayList {
 			listPersona.add(new Persona("Nombre"+i, i));
 		}
 		
-		for (Persona persona : listPersona) {
-			System.out.println(persona.toString());
-		}
-		
 		List<List <Persona>> partsListPersona = chopped(listPersona, 2);
 		System.out.println(partsListPersona);
+		
+		
+		/***************************************************************************************/
+		
+		List<List<Integer>> partsIntoParts = chopIntoParts(numbers, 1);
+		System.out.println(partsIntoParts); 
+		
+		
 
 	}
 	
