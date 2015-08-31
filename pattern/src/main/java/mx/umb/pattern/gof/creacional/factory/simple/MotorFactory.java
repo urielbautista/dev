@@ -1,6 +1,6 @@
 package mx.umb.pattern.gof.creacional.factory.simple;
 
-import mx.umb.pattern.creacional.factory.simple.centralita.IMotor;
+import mx.umb.pattern.gof.creacional.factory.simple.centralita.IMotor;
 
 public class MotorFactory {
 	
