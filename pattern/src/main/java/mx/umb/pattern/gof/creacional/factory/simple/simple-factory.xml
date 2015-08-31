@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<allowedMotorTypes>
+		<motorType id="motorDiesel" class="mx.umb.pattern.creacional.factory.simple.centralita.MotorDiesel" isEnabled="true" />
+		<motorType id="motorGasolina" class="mx.umb.pattern.creacional.factory.simple.centralita.MotorGasolina" isEnabled="true" />
+	</allowedMotorTypes>
+</configuration>

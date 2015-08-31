@@ -1,0 +1,23 @@
+Abstract Factory:
+	Este patron crea diferentes familias de objetos. 
+	Es similar al Factory Method, s�lo que esta orientado a combinar productos.
+	:: la clase DbProviderFactory, que proporciona factorías para diversas familias de bases de datos 
+	y permiten crear desde conexiones hasta adaptadores de datos (DataAdapter).
+	Mediante el fichero de configuración, instanciar determinados objetos dependiendo del ambiente
+Method factory
+	Este patron especializa las factorias. 
+	En lugar de tener una unica factoria que centralice todo el proceso de creacion de objetos,
+	tendremos varias clases factoria.
+	Fabricacion de cualquier objeto.
+Prototype:
+	“Especificar el tipo de objetos que se crearán utilizando una instancia prototipada 
+	y crear nuevos objetos realizando copias de ese prototipo.”
+	::: Salvar el estado de un objeto de session costoso, figuras 2D/3D y paletas de colores.
+builder:
+	“Separar la construcción de un objeto complejo de su representación, 
+	de modo que el mismo proceso de construcción pueda crear representaciones diferentes.”
+	::: Parseador  de Formato de Rexto Enriquecido (RTF).
+Singleton:
+	"Asegurarse de que una clase tiene una única instancia, proporcionando acceso global a ella."
+	::: Logging
+
