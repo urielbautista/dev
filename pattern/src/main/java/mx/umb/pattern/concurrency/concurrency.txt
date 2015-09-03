@@ -1,0 +1,35 @@
+Active object: 
+	Desacopla el metodo de ejecucion del metodo de invocacion para objetos donde cada objeto reside en su propio thread de control.
+	El objetivo es introducir la concurrencia, mediante el uso de invocación del método asíncrono y un programador para tramitar las solicitudes.
+Asynchronous Method nvocation (AMI):
+	Conocido como Asynchronous Method Call o Asynchronous Patter es un soporte del lado del cliente que no bloquea el hilo de llamada
+	mientras espera la respuesta.
+Leader/Followers:
+	Demultiplexa eficientemenet eventos y despacha manejadores de eventos que procesan entradas/salidas de manejo compartido por hilos.
+Balking: 
+	Unicamente ejecuta una acción en un objeto cuando el objeto está en un estado en particular.
+	Por ejemplo, si un objeto lee un archivo y proporciona métodos para acceder al contenido del archivo
+	cuando el archivo no está abierto y se intenta llamar a un método para acceder al contenido, el objeto “rechaza” la petición.
+	Hay algunos especialistas en el campo que piensasn que es mas un antipatron que un patron.
+Binding properties:
+	Combina varios observadores para forzar propiedades en diferentes objetos a ser sincronizados o coordinados de alguna manera.
+Double-checked locking:
+	Reduce la sobrecarga de adquirir un bloqueo probando primero el criterio de bloqueo (la “sugerencia de bloqueo”) sin adquirie realmente el bloqueo. 
+	El bloqueo sólo se adquiere cuando el chequeo del criterio de bloqueo indica que se requiere de un bloqueo.
+Event-based asynchronous: 
+	Un patrón de concurrencia para la invocación asíncrona de métodos potenciales larga ejecución de un objeto.
+Guarded suspension: 
+	Gestiona las operaciones que requieren un bloqueo para ser adquirida y una precocondición para ser satisfacida antes de la operación puede ser ejecutada.
+Half-Sync-Half-Async:
+	 Integra synchronous y asynchronous para soportar ambos modelos Entrada/salida simplificando la programacion y ejecutarlos eficientemente en software complejos.  
+Lock: 
+	Un mecanismo para hacer temporalmente algún aspecto de un objeto o inmodificable para suprimir las notificaciones de actualización que no sean necesarios.
+Messaging design pattern (MDP): 
+	Permite el intercambio de información (es decir, los mensajes) entre los componentes y aplicaciones.
+Monitor object: 
+	Un objeto cuyos métodos están sujetos a la exclusión mutua, evitando así varios objetos de forma errónea tratando de utilizar al mismo tiempo.
+Reactor: Un modelo de gestión de eventos para el manejo de solicitudes de servicio entregados simultáneamente a un manejador de servicio por una o más entradas. El controlador de servicio, entonces desmultiplexa las solicitudes entrantes y los envía de forma sincrónica a los gestores dependientes asociados.
+Read-write lock: Un bloqueo que permite el acceso de lectura simultáneo a un objeto, sino que requiere acceso exclusivo para las operaciones de escritura.
+Scheduler: Un patrón de concurrencia utilizado para controlar de forma explícita cuando las discusiones pueden ejecutar código de un único subproceso; por ejemplo, varios subprocesos con ganas de escribir datos en el mismo archivo.
+Thread pool: Un patrón de concurrencia en el que se crean un número de hilos para realizar diversas tareas, que se organizan por lo general en una cola.
+Thread-specific storage: Un patrón de concurrencia en el que la memoria estática o global se localiza en un hilo. Cada hilo tiene su propia copia de la presente memoria.
