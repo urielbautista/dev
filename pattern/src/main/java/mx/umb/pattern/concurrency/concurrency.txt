@@ -4,8 +4,6 @@ Active object:
 Asynchronous Method nvocation (AMI):
 	Conocido como Asynchronous Method Call o Asynchronous Patter es un soporte del lado del cliente que no bloquea el hilo de llamada
 	mientras espera la respuesta.
-Leader/Followers:
-	Demultiplexa eficientemenet eventos y despacha manejadores de eventos que procesan entradas/salidas de manejo compartido por hilos.
 Balking: 
 	Unicamente ejecuta una acción en un objeto cuando el objeto está en un estado en particular.
 	Por ejemplo, si un objeto lee un archivo y proporciona métodos para acceder al contenido del archivo
@@ -22,14 +20,31 @@ Guarded suspension:
 	Gestiona las operaciones que requieren un bloqueo para ser adquirida y una precocondición para ser satisfacida antes de la operación puede ser ejecutada.
 Half-Sync-Half-Async:
 	 Integra synchronous y asynchronous para soportar ambos modelos Entrada/salida simplificando la programacion y ejecutarlos eficientemente en software complejos.  
+Join:
+	Esta echo para permitir la unir la definicion de varias funciones y/o canales, haciendo coincidir los patrones de llamadas y mensajes concurrentes.
+Leader/Followers:
+	Demultiplexa eficientemenet eventos y despacha manejadores de eventos que procesan entradas/salidas de manejo compartido por hilos.
 Lock: 
 	Un mecanismo para hacer temporalmente algún aspecto de un objeto o inmodificable para suprimir las notificaciones de actualización que no sean necesarios.
 Messaging design pattern (MDP): 
 	Permite el intercambio de información (es decir, los mensajes) entre los componentes y aplicaciones.
 Monitor object: 
 	Un objeto cuyos métodos están sujetos a la exclusión mutua, evitando así varios objetos de forma errónea tratando de utilizar al mismo tiempo.
-Reactor: Un modelo de gestión de eventos para el manejo de solicitudes de servicio entregados simultáneamente a un manejador de servicio por una o más entradas. El controlador de servicio, entonces desmultiplexa las solicitudes entrantes y los envía de forma sincrónica a los gestores dependientes asociados.
-Read-write lock: Un bloqueo que permite el acceso de lectura simultáneo a un objeto, sino que requiere acceso exclusivo para las operaciones de escritura.
-Scheduler: Un patrón de concurrencia utilizado para controlar de forma explícita cuando las discusiones pueden ejecutar código de un único subproceso; por ejemplo, varios subprocesos con ganas de escribir datos en el mismo archivo.
-Thread pool: Un patrón de concurrencia en el que se crean un número de hilos para realizar diversas tareas, que se organizan por lo general en una cola.
-Thread-specific storage: Un patrón de concurrencia en el que la memoria estática o global se localiza en un hilo. Cada hilo tiene su propia copia de la presente memoria.
+Poison Pill:
+	Cuando se necesitará enviar señal desde un subproceso / proceso a otro para terminar.
+Producer Consumer:
+	Describe dos procesos, el producer y el consumer, que comparten un fixed-size buffer usado como una queue. 
+	El trabajo del producer is generar una pieza de datos , lo pone dentro del buffer e inicia de nuevo . 
+	Al mismo tiempo , el consumer esta consumiendo una pieza del dato al mismo tiempo (i.e., removiendolo del buffer).
+	El problema es hacer seguro que el producer no tarte de agregar datos dentro del buffer si este esta lleno y que el consumer no trate de remover el dato de un buffer vacio.
+Reactor: 
+	Un modelo de gestión de eventos para el manejo de solicitudes de servicio entregados simultáneamente a un manejador de servicio por una o más entradas. 
+	El controlador de servicio, entonces desmultiplexa las solicitudes entrantes y los envía de forma sincrónica a los gestores dependientes asociados.
+Read-write lock (Tambien conocido multiple readers/single-writer lock o multi-reader lock): 
+	Un bloqueo que permite el acceso de lectura simultáneo a un objeto, sino que requiere acceso exclusivo para las operaciones de escritura.
+Scheduler: 
+	Un patrón de concurrencia utilizado para controlar de forma explícita cuando las discusiones pueden ejecutar código de un único subproceso; por ejemplo, varios subprocesos con ganas de escribir datos en el mismo archivo.
+Thread pool: 
+	Un patrón de concurrencia en el que se crean un número de hilos para realizar diversas tareas, que se organizan por lo general en una cola.
+Thread-specific storage:
+	Un patrón de concurrencia en el que la memoria estática o global se localiza en un hilo. Cada hilo tiene su propia copia de la presente memoria.
