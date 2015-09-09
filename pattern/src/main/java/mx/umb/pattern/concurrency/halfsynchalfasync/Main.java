@@ -6,8 +6,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class Main {
 
 	public static void main(String[] args) {
-		;
-		
+
 		AsynchronousService service = new AsynchronousService( new LinkedBlockingQueue<Runnable> ()  );
 		/*
 		 *  A new task to calculate sum is received but as this is main thread, it should not block.

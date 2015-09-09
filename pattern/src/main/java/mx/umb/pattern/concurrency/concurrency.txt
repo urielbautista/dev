@@ -1,7 +1,7 @@
 Active object: 
 	Desacopla el metodo de ejecucion del metodo de invocacion para objetos donde cada objeto reside en su propio thread de control.
 	El objetivo es introducir la concurrencia, mediante el uso de invocación del método asíncrono y un programador para tramitar las solicitudes.
-Asynchronous Method nvocation (AMI):
+Asynchronous Method Invocation (AMI):
 	Conocido como Asynchronous Method Call o Asynchronous Patter es un soporte del lado del cliente que no bloquea el hilo de llamada
 	mientras espera la respuesta.
 Balking: 
@@ -14,7 +14,7 @@ Binding properties:
 Double-checked locking:
 	Reduce la sobrecarga de adquirir un bloqueo probando primero el criterio de bloqueo (la “sugerencia de bloqueo”) sin adquirie realmente el bloqueo. 
 	El bloqueo sólo se adquiere cuando el chequeo del criterio de bloqueo indica que se requiere de un bloqueo.
-Event-based asynchronous: 
+Event-based asynchronous: >> Event Driven
 	Un patrón de concurrencia para la invocación asíncrona de métodos potenciales larga ejecución de un objeto.
 Guarded suspension: 
 	Gestiona las operaciones que requieren un bloqueo para ser adquirida y una precocondición para ser satisfacida antes de la operación puede ser ejecutada.
@@ -22,8 +22,8 @@ Half-Sync-Half-Async:
 	 Integra synchronous y asynchronous para soportar ambos modelos Entrada/salida simplificando la programacion y ejecutarlos eficientemente en software complejos.  
 Join:
 	Esta echo para permitir la unir la definicion de varias funciones y/o canales, haciendo coincidir los patrones de llamadas y mensajes concurrentes.
-Leader/Followers:
-	Demultiplexa eficientemenet eventos y despacha manejadores de eventos que procesan entradas/salidas de manejo compartido por hilos.
+Leader/Followers: Taxi
+	Demultiplexa eficientemente eventos y despacha manejadores de eventos que procesan entradas/salidas de manejo compartido por hilos.
 Lock: 
 	Un mecanismo para hacer temporalmente algún aspecto de un objeto o inmodificable para suprimir las notificaciones de actualización que no sean necesarios.
 Messaging design pattern (MDP): 
