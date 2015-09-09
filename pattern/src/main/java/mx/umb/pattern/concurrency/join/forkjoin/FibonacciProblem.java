@@ -1,4 +1,4 @@
-package mx.umb.pattern.concurrency.join;
+package mx.umb.pattern.concurrency.join.forkjoin;
 
 public class FibonacciProblem {
 	 

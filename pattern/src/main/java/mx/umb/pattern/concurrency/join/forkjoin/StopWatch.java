@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package mx.umb.pattern.concurrency.join;
+package mx.umb.pattern.concurrency.join.forkjoin;
 
 import java.io.Serializable;
 

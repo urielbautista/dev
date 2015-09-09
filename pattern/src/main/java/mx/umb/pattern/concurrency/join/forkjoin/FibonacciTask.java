@@ -1,4 +1,4 @@
-package mx.umb.pattern.concurrency.join;
+package mx.umb.pattern.concurrency.join.forkjoin;
 import java.util.concurrent.RecursiveTask;
 
 public class FibonacciTask extends RecursiveTask<Long> {
