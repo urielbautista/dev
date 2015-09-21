@@ -32,6 +32,10 @@ Monitor object:
 	Un objeto cuyos métodos están sujetos a la exclusión mutua, evitando así varios objetos de forma errónea tratando de utilizar al mismo tiempo.
 Poison Pill:
 	Cuando se necesitará enviar señal desde un subproceso / proceso a otro para terminar.
+Proactor.
+	Soporta demultiplexacion y despacha multiples manejadores de eventos, que desencadena la finalizacion de eventos aincornos.
+	Simplifica el desarrollo de aplicaciones asincronas para la integracion de lla demultiplexacion en la finalizacion de eventos y 
+	el despacho de sus correspondientes manejadores de eventos.
 Producer Consumer:
 	Describe dos procesos, el producer y el consumer, que comparten un fixed-size buffer usado como una queue. 
 	El trabajo del producer is generar una pieza de datos , lo pone dentro del buffer e inicia de nuevo . 

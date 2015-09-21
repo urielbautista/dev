@@ -1,0 +1,12 @@
+event pattern:
+reactor
+proactor
+asynchronous event handling
+
+concurrency
+leader/followers
+active object
+monito object
+Half-sync/half-async
+thread specific storage
+double check looking
