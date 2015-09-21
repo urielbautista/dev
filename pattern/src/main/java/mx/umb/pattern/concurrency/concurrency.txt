@@ -14,8 +14,12 @@ Binding properties:
 Double-checked locking:
 	Reduce la sobrecarga de adquirir un bloqueo probando primero el criterio de bloqueo (la “sugerencia de bloqueo”) sin adquirie realmente el bloqueo. 
 	El bloqueo sólo se adquiere cuando el chequeo del criterio de bloqueo indica que se requiere de un bloqueo.
-Event-based asynchronous: >> Event Driven
+Event-based asynchronous:
 	Un patrón de concurrencia para la invocación asíncrona de métodos potenciales larga ejecución de un objeto.
+Event-Driven:
+
+Event - Model:
+	
 Guarded suspension: 
 	Gestiona las operaciones que requieren un bloqueo para ser adquirida y una precocondición para ser satisfacida antes de la operación puede ser ejecutada.
 Half-Sync-Half-Async:
