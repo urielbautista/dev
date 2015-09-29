@@ -1,8 +1,0 @@
-control-flow: aspectos relacionados al control y flujo entre dependencias de varios Threads.
-active object
-scheduler
-	read-wite look
-Thread pool
-Message Queue
-Asincrono procedure call
-guarded call

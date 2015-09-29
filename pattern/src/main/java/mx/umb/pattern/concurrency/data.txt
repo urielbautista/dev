@@ -1,7 +1,0 @@
-data perspective: paso de informacion y alcance de variables
-tread local storage o tread specific storage
-static allocation
-pool allocation
-fixed sized buffer
-garbage colector
-garbage compactor
