@@ -17,7 +17,8 @@ Double-checked locking:
 Event-based asynchronous:
 	Un patrón de concurrencia para la invocación asíncrona de métodos potenciales larga ejecución de un objeto.
 Event-Driven:
-
+	Paradigma de programacion el cual el flujo del programa esta determinado por eventos tales como acciones del usuario, sensores de salida o mensajes de
+	otros hilos del programa. 
 Event - Model:
 	
 Guarded suspension: 
