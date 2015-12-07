@@ -1,0 +1,2 @@
+Modulos: Miscellaneous
+Contiene miscelaneos sin agregar jars externos, solo usando clases nativas.
