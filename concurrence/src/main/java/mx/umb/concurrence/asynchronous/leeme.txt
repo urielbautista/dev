@@ -1,0 +1,5 @@
+SlowWorker:LLamada sincrona
+AsynchronousWorker:Primer ejecucion asíncrono en paralelo
+SequentialWorker:Ejecutando multiples tareas.
+SequentialAsynchronousWorker:Actividad secuencial paralela.
+CalledBack:Verdadera actividad paralela.

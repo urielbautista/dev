@@ -32,6 +32,8 @@
 		
 		<module>miscellaneous</module>
 		<module>utility</module>
+		
+		<module>concurrence</module>
 	</modules>
 	
 </project>
